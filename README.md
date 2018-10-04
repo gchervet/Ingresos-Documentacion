@@ -38,7 +38,9 @@ Las DLL que utiliza **Ingresos** para realizar dichas tareas son:
 
 - Buscar la clase **TiposCarrerasDictionary** en **GGI.Ingreso.UI.Silverlight.Common.Dictionaries**, donde se definen los tipos de carrera mediante un **string** que se almacenará en un **Dictionary**.
 - Agregar en dicha clase un nuevo **string**:
+
 		this.Add(TiposCarrerasCodes.DIPLOMATURA, "Diplomatura");
+
 - Buscar la clase **TiposCarrerasCodes** en **GGI.Ingreso.UI.Silverlight.Common.Enums**, donde se definen los enum que manejan los tipos de carrera.
 - Agregar en dicha clase un nuevo **enum**:
 
