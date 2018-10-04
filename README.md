@@ -13,7 +13,22 @@
 
 # 1. Ubicaciones y dónde modificar
 
-Ingresos 
+Ingresos es el aplicativo que se encarga de los nuevos ingresantes de la universidad.
+
+Está realizado como el **Académico** y **Cuentas corrientes**, en **Silverlight**. Hace uso de **servicios propios y externos**.
+
+El ambiente productivo se encuentra alojado en los servidores **svrwww02** y **svrwww03**. Para llegar a ellos, ingresar mediante **ar-webdc-01**.
+
+Copiar los archivos dll de servicio en las siguientes ubicaciones, dentro del servidor:
+
+	C:\Ingresos\Server\bin
+
+Copiar los archivos dll de cliente en las siguientes ubicaciones, dentro del servidor:
+
+	C:\Ingresos\Cliente\ClientBin
+	C:\Ingresos\Cliente\bin
+
+Siempre hacer un backup antes de subir cualquier cambio.
 
 <a name="agregartipocarrera" />
 
