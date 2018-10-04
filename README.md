@@ -75,25 +75,23 @@ Una vez agregado nuestro nuevo diccionario (en este caso **mDip**
 
 ```c#
 if (mEscuela.Nivel.ToLower() == "grado")
-                                    {
-                                        mGrado.Add(mEscuela.Id, mNombre);
-                                    }
-                                    else
-                                    {
-                                        if (mEscuela.Nivel.ToLower() == "posgrado")
-                                            mPos.Add(mEscuela.Id, mNombre);
-                                        else if(mEscuela.Nivel.ToLower() == "diplomatura")
-                                            mDip.Add(mEscuela.Id, mNombre);
-                                        else // Ante cualquier discordancia, se agrega la carrera a Pregrado
-                                            mPre.Add(mEscuela.Id, mNombre);
-                                    }
+{
+      mGrado.Add(mEscuela.Id, mNombre);
+}
+else
+{
+	if (mEscuela.Nivel.ToLower() == "posgrado")
+		mPos.Add(mEscuela.Id, mNombre);
+	else if(mEscuela.Nivel.ToLower() == "diplomatura")
+		mDip.Add(mEscuela.Id, mNombre);
+	else // Ante cualquier discordancia, se agrega la carrera a Pregrado
+		mPre.Add(mEscuela.Id, mNombre);
+}
 ```
 
 Lo que se debe hacer es agregar un nuevo **If** para verificar el nuevo nombre, en este caso se agregaron las siguientes líneas:
 
 ```c#
-
-                                        else if(mEscuela.Nivel.ToLower() == "diplomatura")
-                                            mDip.Add(mEscuela.Id, mNombre);
-
+	else if(mEscuela.Nivel.ToLower() == "diplomatura")
+		mDip.Add(mEscuela.Id, mNombre);
 ```
