@@ -32,8 +32,15 @@ Las DLL que utiliza **Ingresos** para realizar dichas tareas son:
 	GGI.Ingreso.UI.Silverlight.App.xap
 		En C:\cs\DEV2\GGI\GGI.Ingreso\GGI.Ingreso.UI.Silverlight.App.Web\ClientBin
 
-Observar que se utiliza la dll correspondiente al Domain.Facade del Academico. Para modificarla deberemos abrir dicho proyecto desde el **visualizador de código fuente** de VS 2008 y buscar el método 
+**En el cliente Silverlight:**
+
+	C:\cs\DEV2\GGI\GGI.Ingreso\GGI.Ingreso.UI.Silverlight.App.Web
+
+- Buscar la clase **GGI.Ingreso.UI.Silverlight.Common.Dictionaries**, donde se definen los tipos de carrera mediante un **enum**.
+
+Observar que se utiliza la dll correspondiente al **Domain.Facade** del **Academico**. Para modificarla deberemos abrir dicho proyecto desde el **visualizador de código fuente** de **VS 2008** y buscar el **método GetCarreras** de la clase **AcademicoFacade**:
 
 ```c#
 private Dictionary<string, Dictionary<string, string>> GetCarreras(string modalidad)
 ```
+
