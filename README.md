@@ -44,7 +44,11 @@ Las DLL que utiliza **Ingresos** para realizar dichas tareas son:
 - Buscar la clase **TiposCarrerasCodes** en **GGI.Ingreso.UI.Silverlight.Common.Enums**, donde se definen los enum que manejan los tipos de carrera.
 - Agregar en dicha clase un nuevo **enum**:
 
+		public const string DIPLOMATURA = "diplomatura";
 
+En ingresos no deberíamos agregar nada más, ya que dichos diccionarios se populan mediante la dll de Académico.
+
+**En el servicio del Académico**:
 
 Observar que se utiliza la dll correspondiente al **Domain.Facade** del **Academico**. Para modificarla deberemos abrir dicho proyecto desde el **visualizador de código fuente** de **VS 2008** y buscar el **método GetCarreras** de la clase **AcademicoFacade**: 
 
