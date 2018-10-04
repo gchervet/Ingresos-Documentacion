@@ -62,13 +62,12 @@ private Dictionary<string, Dictionary<string, string>> GetCarreras(string modali
 Observar que ni bien comienza el método, se generan los diccionarios que se devolverán luego al cliente de **Ingresos** (ver anotaciones en el código):
 
 ```c#
-Dictionary<string, Dictionary<string, string>> mCarreras = new Dictionary<string, Dictionary<string, string>>();
-            Dictionary<string, string> mGrado = new Dictionary<string, string>();
-            Dictionary<string, string> mPos = new Dictionary<string, string>();
-            Dictionary<string, string> mPre = new Dictionary<string, string>();
-            Dictionary<string, string> mExtension = new Dictionary<string, string>();
-            // Agregar nuevo diccionario aquí
-            Dictionary<string, string> mDip = new Dictionary<string, string>();
+Dictionary<string, string> mGrado = new Dictionary<string, string>();
+Dictionary<string, string> mPos = new Dictionary<string, string>();
+Dictionary<string, string> mPre = new Dictionary<string, string>();
+Dictionary<string, string> mExtension = new Dictionary<string, string>();
+// Agregar nuevo diccionario aquí
+Dictionary<string, string> mDip = new Dictionary<string, string>();
 ```
 Una vez agregado nuestro nuevo diccionario (en este caso **mDip**
  para Diplomaturas), la información de la base se obtendrá de la tabla **uniEscuelas** (esta tabla maneja las carreras, por más que se llame "Escuelas"). El sistema verifica mediante el campo **Nivel** de dicha tabla para ver en qué diccionario agregar cada carrera:
