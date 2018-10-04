@@ -94,3 +94,7 @@ Lo que se debe hacer es agregar un nuevo **If** para verificar el nuevo nombre, 
 	else if(mEscuela.Nivel.ToLower() == "diplomatura")
 		mDip.Add(mEscuela.Id, mNombre);
 ```
+
+Finalmente:
+
+- En la base de datos se debe ir a la tabla **uniEscuelas**  y ver qué carreras deben tener el nuevo campo **Nivel** modificado, en este caso con el valor "diplomatura".
