@@ -39,12 +39,16 @@ Las DLL que utiliza **Ingresos** para realizar dichas tareas son:
 - Buscar la clase **TiposCarrerasDictionary** en **GGI.Ingreso.UI.Silverlight.Common.Dictionaries**, donde se definen los tipos de carrera mediante un **string** que se almacenará en un **Dictionary**.
 - Agregar en dicha clase un nuevo **Dictionary**:
 
-		this.Add(TiposCarrerasCodes.DIPLOMATURA, "Diplomatura");
+```c#
+this.Add(TiposCarrerasCodes.DIPLOMATURA, "Diplomatura");
+```
 
 - Buscar la clase **TiposCarrerasCodes** en **GGI.Ingreso.UI.Silverlight.Common.Enums**, donde se definen los códigos string que manejan los tipos de carrera.
 - Agregar en dicha clase un nuevo **código string**:
 
-		public const string DIPLOMATURA = "diplomatura";
+```c#
+public const string DIPLOMATURA = "diplomatura";
+```
 
 En ingresos no deberíamos agregar nada más, ya que dichos diccionarios se populan mediante la dll de Académico.
 
